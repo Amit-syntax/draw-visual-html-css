@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/property-panel.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="app--toolbar">
+        <div id="transformTool">
+          <img src="images/tool/transform.svg" alt="" />
+        </div>
+        <div id="createDivTool">
+          <img src="images/tool/creatediv.svg" alt="" />
+        </div>
+        <div id="createCircleTool">
+          <img src="images/tool/createCircle.svg" alt="" />
+        </div>
+        <div id="createLineTool">
+          <img src="images/tool/line.svg" alt="" />
+        </div>
+      </div>
+      <div class="app--editor">
+        <div id="app--editor--view">
+          <div
+            style="width: 100px; height: 100px; background-color: #a1bcff"
+            data-type="rect-element"
+          ></div>
+        </div>
+        <div id="huds">
+          <div id="transform">
+            <!-- <div id="topLeft" class="top left" data-direction='-1' data-direction="-1" transfrom-resize="true"></div>
+            <div
+              id="topRight"
+              class="top right"
+              transfrom-resize="true"
+            ></div> -->
+            <div
+              id="bottomRight"
+              class="bottom right"
+              transfrom-resize="true"
+            ></div>
+            <!-- <div
+              id="bottomLeft"
+              class="bottom left"
+              transfrom-resize="true"
+            ></div>
+            <div id="leftMid" class="left mid" transfrom-resize="true"></div>
+            <div
+              id="bottomMid"
+              class="bottom mid"
+              transfrom-resize="true"
+            ></div>
+            <div id="topMid" class="top mid" transfrom-resize="true"></div>
+            <div
+              id="rightMid"
+              class="right mid"
+              transfrom-resize="true"
+            ></div> -->
+          </div>
+
+          <div id="transform_line">
+            <div id="linePointLeft" transform-line='true' ></div>
+            <div id="linePointRight" transform-line='true' ></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="property-panel">
+      <div data-tab="design-prop">
+        <div class="prop-group">
+          <label for="" aria-label="X">
+            <span>X</span>
+            <input spellcheck='false' autocomplete="new-password">
+          </label>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <script src="js/Main.js"></script>
+</html>
